@@ -1,0 +1,45 @@
+@import "tailwindcss";
+/* :root {
+  --font-weight-regular: 400;
+  --font-test: 700;
+} */
+
+/* color */
+@theme {
+  --color-white:(0, 0%, 100%);
+
+  --color-slate-*: initial;
+  --color-slate-300:hsl(212, 45%, 89%);
+  --color-slate-500:hsl(216, 15%, 48%);
+  --color-slate-900:hsl(218, 44%, 22%);
+}
+
+/* spacing */
+@theme {
+  --spacing-*: initial;
+  --spacing-0:0;
+  --spacing-200:1rem;
+  --spacing-300:1.5rem;
+  --spacing-500:2.5rem;
+}
+
+@utility typo-1 {
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-outfit);
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+@utility typo-2 {
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-outfit);
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.2;
+}
+
+body {
+  @apply bg-white text-black;
+  font-family: var(--font-outfit), Arial, Helvetica, sans-serif;
+}
