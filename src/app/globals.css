@@ -6,7 +6,7 @@
 
 /* color */
 @theme {
-  --color-white:(0, 0%, 100%);
+  --color-white:hsl(0, 0%, 100%);
 
   --color-slate-*: initial;
   --color-slate-300:hsl(212, 45%, 89%);
@@ -24,22 +24,24 @@
 }
 
 @utility typo-1 {
-  font-weight: var(--font-weight-bold);
   font-family: var(--font-outfit);
+  font-weight: var(--font-weight-bold);
   font-size: 22px;
   line-height: 120%;
   letter-spacing: 0;
+  color: var(--color-slate-900)
 }
 
 @utility typo-2 {
-  font-weight: var(--font-weight-regular);
   font-family: var(--font-outfit);
+  font-weight: var(--font-weight-regular);
   font-size: 15px;
   line-height: 140%;
-  letter-spacing: 0.2;
+  letter-spacing: 0.2px;
+  color: var(--color-slate-500)
 }
 
 body {
-  @apply bg-white text-black;
+  @apply bg-slate-300 text-black;
   font-family: var(--font-outfit), Arial, Helvetica, sans-serif;
 }

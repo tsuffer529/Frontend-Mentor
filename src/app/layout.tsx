@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 
-// typographyからとってくる
+// FigmaのTypographyからとってくる
 const outfit = Outfit({
   variable: "--font-outfit",
   weight: ["400", "700"],
